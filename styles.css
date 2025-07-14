@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #111827;
+    color: white;
+    line-height: 1.6;
+}
+
+.portfolio-container {
+    min-height: 100vh;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+.nav-content {
+    display: flex;
+    gap: 32px;
+    background-color: rgba(31, 41, 55, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 12px 32px;
+    border-radius: 9999px;
+}
+
+.nav-item {
+    color: #d1d5db;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #60a5fa;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 80px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hello-text {
+    font-size: 14px;
+    color: #9ca3af;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+}
+
+.main-title {
+    font-size: 96px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #d1d5db;
+}
+
+.hero-image {
+    width: 320px;
+    height: 240px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* About Section */
+.about-section {
+    padding: 64px 80px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.about-text {
+    color: #d1d5db;
+    max-width: 1024px;
+    line-height: 1.7;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 64px 80px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 64px;
+}
+
+.portfolio-card {
+    background-color: #1f2937;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.portfolio-header {
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-bg {
+    background-color: #3b82f6;
+}
+
+.dark-bg {
+    background-color: #1f2937;
+}
+
+.light-blue-bg {
+    background-color: #60a5fa;
+}
+
+.red-bg {
+    background-color: #ef4444;
+}
+
+.portfolio-title {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.portfolio-body {
+    padding: 16px;
+}
+
+.portfolio-subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+
+.group-projects-title {
+    margin-bottom: 32px;
+}
+
+.group-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-card {
+    background-color: #1f2937;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.project-image {
+    width: 64px;
+    height: 64px;
+    background-color: #374151;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-logo {
+    width: 64px;
+    height: 64px;
+    background-color: #374151;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.project-description {
+    max-width: 512px;
+}
+
+.project-description p {
+    color: #d1d5db;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.project-button {
+    color: #60a5fa;
+    border: 1px solid #60a5fa;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #60a5fa;
+    color: white;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 64px 80px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 80px;
+}
+
+.skill-item {
+    margin-bottom: 16px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    font-weight: 500;
+    color: white;
+}
+
+.skill-years {
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #374151;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #3b82f6;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 64px 80px 128px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 48px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #d1d5db;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+    color: white;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-section,
+    .about-section,
+    .portfolio-section,
+    .skills-section,
+    .contact-section {
+        padding: 32px 40px;
+    }
+    
+    .main-title {
+        font-size: 64px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-content {
+        gap: 16px;
+        padding: 8px 16px;
+    }
+    
+    .hero-section,
+    .about-section,
+    .portfolio-section,
+    .skills-section,
+    .contact-section {
+        padding: 24px 20px;
+    }
+    
+    .main-title {
+        font-size: 48px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
